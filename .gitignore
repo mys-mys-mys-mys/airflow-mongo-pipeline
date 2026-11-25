@@ -1,0 +1,9 @@
+README.Docker.md
+.env
+/venv
+/env
+.venv
+test/
+.vscode
+config/
+logs/

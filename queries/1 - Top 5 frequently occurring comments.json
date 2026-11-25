@@ -1,0 +1,23 @@
+{
+  "mostFrequentlyOccurringComments": [
+    {
+      "$group": {
+        "_id": "$content",
+        "count": { "$sum": 1 }
+      }
+    },
+    {
+      "$match": {
+        "_id": { "$ne": null },
+        "count": { "$gt": 1 }
+      }
+    },
+    {
+      "$sort": { "count": -1 }
+    },
+    {
+      "$limit": 5
+    }
+  ]
+}
+

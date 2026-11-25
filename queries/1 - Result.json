@@ -1,0 +1,24 @@
+{
+  "mostFrequentlyOccurringComments": [
+    {
+      "_id": "Good",
+      "count": 11535
+    },
+    {
+      "_id": "Nice",
+      "count": 9338
+    },
+    {
+      "_id": "-",
+      "count": 7290
+    },
+    {
+      "_id": "Nice app",
+      "count": 4751
+    },
+    {
+      "_id": "Good app",
+      "count": 3555
+    }
+  ]
+}

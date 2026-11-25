@@ -1,0 +1,17 @@
+{
+  "avgRatingForEachDay": [
+    {
+      "$group": {
+        "_id": {
+         "$toLong": {
+            "$dateTrunc": {
+            "date": "$at",
+            "unit": "day"
+          }
+         }
+        },
+       "rating": { "$avg": "$score"}
+      }
+    }
+  ]
+}
